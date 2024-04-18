@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using UnityEngine;
 using UnityEngine.Events;
-namespace WatchAndDate
+namespace Eloi.WatchAndDate
 {
     public class UI2DMono_WatchAndDateTimeAsText : MonoBehaviour
     {

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.Events;
 
-namespace WatchAndDate { 
+namespace Eloi.WatchAndDate { 
 
     public class WatchAndDateTimeActionResultMono : MonoBehaviour
     {
