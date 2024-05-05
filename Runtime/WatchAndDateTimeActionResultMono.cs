@@ -25,7 +25,7 @@ namespace Eloi.WatchAndDate {
             m_watchTime.StartCounting();
         }
         [ContextMenu("Stop Counting")]
-        public void StartCountingAndReset()
+        public void StopCounting()
         {
             m_watchTime.StopCounting();
         }
