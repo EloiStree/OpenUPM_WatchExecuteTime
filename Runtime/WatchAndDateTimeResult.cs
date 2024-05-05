@@ -96,6 +96,7 @@ namespace Eloi.WatchAndDate
         Stopwatch m_stopWatch;
         public void StartCounting()
         {
+            CheckInit();
             m_start = DateTime.Now;
             m_stopWatch = new Stopwatch();
             m_stopWatch.Start();
@@ -104,8 +105,23 @@ namespace Eloi.WatchAndDate
             m_watchTimeInMilliseconds = 0;
             m_watchTimeInTick = 0;
         }
+
+        private void CheckInit()
+        {
+            if (m_stopWatch == null)
+            { 
+                m_start = DateTime.Now;
+                m_now = DateTime.Now;
+                m_stopWatch = new Stopwatch();
+                m_stopWatch.Start();
+                m_stopWatch.Stop();
+            }
+        }
+
         public void StopCounting()
         {
+
+            CheckInit();
 
             m_stopWatch.Stop();
             m_now = DateTime.Now;
